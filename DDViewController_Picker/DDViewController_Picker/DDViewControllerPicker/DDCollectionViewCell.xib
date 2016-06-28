@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="92" height="92"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yZH-iF-gD0">
+                        <rect key="frame" x="0.0" y="0.0" width="92" height="92"/>
+                    </imageView>
+                    <view hidden="YES" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gl7-Q9-SOA">
+                        <rect key="frame" x="0.0" y="0.0" width="92" height="92"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PickerChecked.png" translatesAutoresizingMaskIntoConstraints="NO" id="PyM-jo-XWd">
+                        <rect key="frame" x="62" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="1yI-ef-MOg"/>
+                            <constraint firstAttribute="height" constant="20" id="FJ5-Jd-iwK"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yZH-iF-gD0" secondAttribute="bottom" id="8SZ-tg-HVY"/>
+                <constraint firstItem="PyM-jo-XWd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="LVB-HS-dpu"/>
+                <constraint firstAttribute="trailing" secondItem="PyM-jo-XWd" secondAttribute="trailing" constant="10" id="b7A-pD-0z1"/>
+                <constraint firstItem="gl7-Q9-SOA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cJl-nw-VfC"/>
+                <constraint firstAttribute="trailing" secondItem="yZH-iF-gD0" secondAttribute="trailing" id="f1O-3F-Fyy"/>
+                <constraint firstItem="gl7-Q9-SOA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hRr-cj-cFm"/>
+                <constraint firstAttribute="bottom" secondItem="gl7-Q9-SOA" secondAttribute="bottom" id="m0I-73-Sii"/>
+                <constraint firstAttribute="trailing" secondItem="gl7-Q9-SOA" secondAttribute="trailing" id="td9-0x-UhJ"/>
+                <constraint firstItem="yZH-iF-gD0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uDz-SO-P5t"/>
+                <constraint firstItem="yZH-iF-gD0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wXd-qe-w1i"/>
+            </constraints>
+            <size key="customSize" width="117" height="85"/>
+            <connections>
+                <outlet property="imageViewBackGround" destination="yZH-iF-gD0" id="XRO-Iq-ETd"/>
+                <outlet property="imageView_Select" destination="PyM-jo-XWd" id="G7M-0P-XCq"/>
+                <outlet property="view_Mask" destination="gl7-Q9-SOA" id="oic-1Q-dBZ"/>
+            </connections>
+            <point key="canvasLocation" x="204.5" y="299.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PickerChecked.png" width="31" height="31"/>
+    </resources>
+</document>
